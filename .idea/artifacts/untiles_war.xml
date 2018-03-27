@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="untiles:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="untiles.war">
+      <element id="artifact" artifact-name="untiles:war exploded" />
+    </root>
+  </artifact>
+</component>
