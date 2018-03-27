@@ -1,4 +1,4 @@
-package com.mj.factory.factorymethod;
+package com.mj.factory.factorymethod.car;
 
 
 public class BenzDriver implements Driver {
