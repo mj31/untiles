@@ -1,16 +1,16 @@
 package com.mj.cache;
 
-import redis.clients.jedis.HostAndPort;
+/*import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPoolConfig;
 
 import java.io.IOException;
 import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.Set;*/
 
 public class RedisCluster {
 
-    private static JedisCluster getCluster(){
+    /*private static JedisCluster getCluster(){
         String ip = "121.199.20.251" ;
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         // 最大连接数
@@ -40,12 +40,12 @@ public class RedisCluster {
         Long setnx2 = cluster.setnx("money", "好人");
         System.out.println(setnx1);
         System.out.println(setnx2);
-        /*String money = cluster.get("money");
+        *//*String money = cluster.get("money");
         System.out.println(money);
         cluster.del("money");
-        System.out.println(cluster.get("money"));*/
+        System.out.println(cluster.get("money"));*//*
         cluster.close();
-    }
+    }*/
 
 
 }
