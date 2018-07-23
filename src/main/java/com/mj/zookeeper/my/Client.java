@@ -1,4 +1,4 @@
-package com.mj.zookeeper;
+package com.mj.zookeeper.my;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
