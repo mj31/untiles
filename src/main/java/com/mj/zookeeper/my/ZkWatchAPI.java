@@ -148,7 +148,7 @@ public class ZkWatchAPI implements Watcher {
     public String readData(String path){
         String nodePath = null ;
         try {
-            nodePath = new String(zk.getData(path, false, null));
+            nodePath = new String(zk.getData(path, true, null));
             logger.info("获取节点:{},数据:{}",path,nodePath);
         } catch (KeeperException e) {
             logger.error("获取节点:{},数据，发生KeeperException异常,原因:{}",path,e.getMessage());
@@ -199,7 +199,7 @@ public class ZkWatchAPI implements Watcher {
      */
     public boolean isExists( String path ){
         try {
-            Stat stat = this.zk.exists( path, false );
+            Stat stat = this.zk.exists( path, true );
             return null != stat;
         } catch (KeeperException e) {
             logger.error( "读取数据失败,发生KeeperException! path: " + path
@@ -247,12 +247,12 @@ public class ZkWatchAPI implements Watcher {
         System.out.println("是否存在:"+exists);
         String data1 = api.readData(path);
         System.out.println("读取数据1:"+data1);
-        Thread.sleep(5000);
-        boolean setData_ = api.setPath(path, "我是haoren ");
+        boolean setData_ = api.setPath(path, "我是haoren2 ");
         System.out.println("更新成功："+setData_);
 
         String data2 = api.readData(path);
         System.out.println("读取数据2:"+data2);
+        api.releaseConnection();
 
 
     }
