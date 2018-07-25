@@ -1,4 +1,4 @@
-package com.mj.designpattern.observer;
+package com.mj.designpattern.observer.observer0;
 
 /**
  * 用户从报社订阅报纸，报社和用户之间是一对多依赖，

@@ -1,4 +1,4 @@
-package com.mj.designpattern.observer;
+package com.mj.designpattern.observer.observer0;
 
 /**
  * 观察者定义接口

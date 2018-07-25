@@ -35,5 +35,6 @@ public class CreateSession implements Watcher {
         ConnectStringParser connectStringParser = new ConnectStringParser(
                 connectString);
         System.out.println(connectStringParser.getServerAddresses());
+
     }
 }

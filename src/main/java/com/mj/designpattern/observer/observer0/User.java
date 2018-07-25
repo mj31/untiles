@@ -1,4 +1,4 @@
-package com.mj.designpattern.observer;
+package com.mj.designpattern.observer.observer0;
 
 public class User implements MyObserver {
     private String mName;
