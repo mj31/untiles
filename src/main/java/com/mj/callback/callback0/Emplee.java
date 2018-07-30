@@ -1,4 +1,4 @@
-package com.mj.callback;
+package com.mj.callback.callback0;
 
 public class Emplee {
     CallBack callBack ;

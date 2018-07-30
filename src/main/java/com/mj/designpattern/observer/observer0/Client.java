@@ -1,5 +1,8 @@
 package com.mj.designpattern.observer.observer0;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 用户从报社订阅报纸，报社和用户之间是一对多依赖，
  * 用户可以在报社订阅（register）报纸，报社可以把最新的报纸发给用户（notify），
@@ -14,5 +17,6 @@ public class Client {
             user = new User("user:"+i);
             provider.register(user);
         }
+
     }
 }
