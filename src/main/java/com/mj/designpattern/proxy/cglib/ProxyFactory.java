@@ -36,6 +36,6 @@ public class ProxyFactory implements MethodInterceptor {
 
         System.out.println("提交事务...");
 
-        return returnValue;
+        return o;
     }
 }

@@ -14,4 +14,14 @@ public class UserDaoProxy implements IUserDao {
         userDao.save();
         System.out.println("结束代理");
     }
+
+    @Override
+    public void delete(Long id) {
+
+    }
+
+    @Override
+    public void update(Long id, String userName) {
+
+    }
 }
